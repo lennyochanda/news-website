@@ -1,11 +1,14 @@
 # These files are text and should be normalized (Convert crlf => lf)
 *.css text
 *.html text
+*.inc text
+*.ini text
 *.js text
 *.scss text
 *.svelte text
 *.txt text
 *.xml text
+.htaccess text
 
 # These files are binary and should be left untouched
 # (binary is a macro for -text -diff)
