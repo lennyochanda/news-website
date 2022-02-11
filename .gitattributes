@@ -1,0 +1,24 @@
+# These files are text and should be normalized (Convert crlf => lf)
+*.css text
+*.html text
+*.js text
+*.scss text
+*.svelte text
+*.txt text
+*.xml text
+
+# These files are binary and should be left untouched
+# (binary is a macro for -text -diff)
+
+*.gif binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.mov binary
+*.mp3 binary
+*.mp4 binary
+*.png binary
+*.zip binary
+
+# Auto detect text files and perform lf normalization
+* text=auto
