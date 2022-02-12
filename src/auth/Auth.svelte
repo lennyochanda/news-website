@@ -2,7 +2,7 @@
 	import {supabase} from '$lib/db/supabaseClient'
 
 	let loading = false
-	let remainingLinesIndex
+	let email
 
 	const handleLogin = async () => {
 		try {
