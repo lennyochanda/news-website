@@ -1,0 +1,12 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	font-family: inherit;
+	outline: none;
+}
+
+body {
+	min-height: 100vh;
+	background: $background;
+}
