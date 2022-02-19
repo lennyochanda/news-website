@@ -10,6 +10,7 @@ const config = {
 				prependData: `@import 'src/lib/assets/scss/_vars.scss';`
 			}
 		}),
+	]
 	kit: {
 		adapter: adapter()
 	}
