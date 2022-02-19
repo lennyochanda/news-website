@@ -1,0 +1,5 @@
+<div class="hero">
+	<article>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam in cumque natus ad, similique fuga, maiores ex libero perspiciatis necessitatibus, qui praesentium doloremque optio quod soluta, explicabo totam eos possimus quibusdam. Ea, tenetur ducimus odit hic quam, minus nulla amet sequi. Quibusdam harum quia accusamus quis cum reiciendis eligendi modi temporibus officia voluptatem aspernatur, at quasi enim mollitia nemo praesentium, sed quod sunt unde ducimus ad doloremque placeat nulla? Cumque, omnis tenetur nemo quas possimus nam accusantium nostrum, placeat aliquid atque libero unde ipsam. Nesciunt ad vel veritatis est eos quos esse nostrum excepturi perferendis id adipisci, culpa at deserunt sequi itaque qui ea ab possimus dolore fugiat iure quam, quaerat repellat. Esse fugit error quasi laudantium iste, maxime. Quasi quae saepe et quaerat dolore velit, asperiores accusantium vero nesciunt libero possimus odit expedita error quibusdam perspiciatis molestiae quod sapiente culpa obcaecati tempore repudiandae? Odit quae qui eligendi voluptatum enim.
+	</article>
+</div>
