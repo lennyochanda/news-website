@@ -5,6 +5,10 @@
 	};
 </script>
 
+<script>
+	export let error, status
+</script>
+
 <h2>{status}</h2>
 
 <p>{error.message}</p>
