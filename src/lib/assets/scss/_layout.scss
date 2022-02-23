@@ -28,6 +28,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 1rem;
 }
 .container {
 	min-block-size: 70%;
@@ -45,19 +46,13 @@ aside {
 }
 .cards {
 	display: grid;
+	place-items: center;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-	grid-gap: $--metric-box-spacing;
-}
-.card {
-	padding: $--metric-box-spacing;
-	background-color: #eee;
-	border-radius: $--metric-radius;
-	box-shadow: $--generic-shadow;
 }
 @media (min-width: 45em) {
 	.container {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 3fr 2fr;
 		align-items: flex-start;
 	}
 	.hero {
