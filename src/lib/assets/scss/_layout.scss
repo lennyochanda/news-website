@@ -49,10 +49,10 @@ aside {
 	place-items: center;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
-@media (min-width: 45em) {
+@media (min-width: 50em) {
 	.container {
 		display: grid;
-		grid-template-columns: 3fr 2fr;
+		grid-template-columns: 4fr 2fr;
 		align-items: flex-start;
 	}
 	.hero {
