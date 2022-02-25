@@ -28,13 +28,10 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem;
+	padding: $--metric-box-spacing;
 }
 .container {
 	min-block-size: 70%;
-}
-article {
-	background-color: hsl(60deg 70% 95%);
 }
 aside {
 	background-color: hsl(10deg 70% 95%);
@@ -46,14 +43,16 @@ aside {
 }
 .cards {
 	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: $--metric-box-spacingLg;
 	place-items: center;
-	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 @media (min-width: 50em) {
 	.container {
 		display: grid;
 		grid-template-columns: 4fr 2fr;
 		align-items: flex-start;
+		grid-gap: $--metric-box-spacingLg;
 	}
 	.hero {
 		grid-column: 1 / -1;
