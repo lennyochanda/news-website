@@ -15,9 +15,12 @@ $xxxlMin: 1960px;
 
 // metrics
 
-$--metric-box-spacing: .5em;
+$--metric-box-spacingSm: .4rem;
+$--metric-box-spacing: .8rem;
+$--metric-box-spacingLg: 1.2rem;
 $--metric-radius: 5px;
 $--metric-Max-bpoint: 1279px;
+$--metric-Sm-bpoint: 799px;
 
 // Colors
 
@@ -28,7 +31,7 @@ $--color-core-bg: #FDFFFC;
 
 $--color-shade-dark: #011627;
 $--color-shade-mid: #A5A7AF;
-$--color-shade-bright: #D2D3D7;
+$--color-shade-bright: #F5F5F5;
 
 $--color-state-success: #OD652D;
 $--color-state-success-bright: #E9F6ED;

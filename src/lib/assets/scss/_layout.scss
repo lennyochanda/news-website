@@ -7,7 +7,7 @@
 html {
 	margin: 0;
 	padding: 0;
-
+	min-height: 100vh;
 }
 
 body {
@@ -28,12 +28,10 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: $--metric-box-spacing;
 }
 .container {
 	min-block-size: 70%;
-}
-article {
-	background-color: hsl(60deg 70% 95%);
 }
 aside {
 	background-color: hsl(10deg 70% 95%);
@@ -45,20 +43,16 @@ aside {
 }
 .cards {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-	grid-gap: $--metric-box-spacing;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: $--metric-box-spacingLg;
+	place-items: center;
 }
-.card {
-	padding: $--metric-box-spacing;
-	background-color: #eee;
-	border-radius: $--metric-radius;
-	box-shadow: $--generic-shadow;
-}
-@media (min-width: 45em) {
+@media (min-width: 50em) {
 	.container {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 4fr 2fr;
 		align-items: flex-start;
+		grid-gap: $--metric-box-spacingLg;
 	}
 	.hero {
 		grid-column: 1 / -1;
