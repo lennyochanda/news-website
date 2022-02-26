@@ -29,7 +29,7 @@
 </div>
 
 <style lang="scss">
-	h2 {
+	h4 {
 		margin: $--metric-box-spacingSm 0;
 	}
 	.visual {

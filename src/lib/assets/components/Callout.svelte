@@ -1,10 +1,10 @@
 <div class="callout">
-	<h2><span>Breaking News</span> Title Here</h2>
+	<h5><span>Breaking News</span> Title Here</h5>
 </div>
 
 <style lang="scss">
 	.callout {
-		padding: $--metric-box-spacingLg $--metric-box-spacing;
+		padding: $--metric-box-spacing 0;
 		margin-bottom: $--metric-box-spacingLg;
 		grid-column: 1 / -1;
 		display: flex;

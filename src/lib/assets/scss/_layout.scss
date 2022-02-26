@@ -33,14 +33,6 @@ main {
 .container {
 	min-block-size: 70%;
 }
-aside {
-	background-color: hsl(10deg 70% 95%);
-}
-article,
-aside {
-	padding: $--metric-box-spacing;
-	margin: $--metric-box-spacing;
-}
 .cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

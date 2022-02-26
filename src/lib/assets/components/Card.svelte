@@ -2,19 +2,19 @@
 	import IconBar from './IconBar.svelte'
 </script>
 
-<div class="card">
+<article class="card">
 	<div class="visual">
 	</div>
 	<div class="content">
 		<div class="content-header">
 			<div class="content-header__title">
-				<h1>Title Here</h1>
+				<h3>Title Here</h3>
 			</div>
 		</div>
 		<div class="content-body">
 			<div class="content-body__excerpt">
 				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur laudantium quam voluptates cumque aliquam ad, ipsa, error adipisci ducimus cupiditate.
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, rerum.
 				</p>
 			</div>
 		</div>
@@ -25,7 +25,7 @@
 		</div>
 	</div>
 	<IconBar cards=true/>
-</div>
+</article>
 
 <style lang="scss">
 	.card {
@@ -34,6 +34,7 @@
 		border-radius: $--metric-radius;
 		box-shadow: $--generic-shadow;
 		background-color: $--color-shade-bright;
+		max-inline-size: 66ch;
 	}
 	.visual {
 		background: $--color-shade-mid;

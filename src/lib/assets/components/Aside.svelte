@@ -9,12 +9,17 @@
 		</div>
 	</div>
 	<div class="title">
-		<h2>Video Title Here</h2>
+		<h3>Video Title Here</h3>
 	</div>
 </div>
 
 <style lang="scss">
-	h2 {
+	@media (max-width: 50em) {
+		.aside {
+			margin: $--metric-box-spacingLg 0;
+		}
+	}
+	h3 {
 		margin: $--metric-box-spacingSm 0;
 	}
 	span {
