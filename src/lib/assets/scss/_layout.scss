@@ -8,6 +8,7 @@ html {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
+	--app-drawer-width: 50%;
 }
 
 body {
@@ -32,14 +33,6 @@ main {
 }
 .container {
 	min-block-size: 70%;
-}
-aside {
-	background-color: hsl(10deg 70% 95%);
-}
-article,
-aside {
-	padding: $--metric-box-spacing;
-	margin: $--metric-box-spacing;
 }
 .cards {
 	display: grid;
