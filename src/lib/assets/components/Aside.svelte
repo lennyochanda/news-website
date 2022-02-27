@@ -36,6 +36,7 @@
 		position: absolute;
 		opacity: 0;
 		animation: scaleIn 1.8s infinite cubic-bezier(.36, .11, .89, .32);
+		z-index: 0;
 	}
 	@keyframes scaleIn {
 		from {

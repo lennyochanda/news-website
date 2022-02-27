@@ -1,0 +1,25 @@
+<script>
+	import { currentPage } from '$lib/assets/js/store';
+
+	export let href;
+
+	$: isCurrentPage = $currentPage.startsWith(href);
+</script>
+
+<li>
+	<a
+		aria-current={isCurrentPage ? 'page' : false}
+		class:active={isCurrentPage}
+		{href}
+		sveltekit:prefetch
+	>
+		<slot />
+	</a>
+</li>
+
+<style lang="scss">
+	a {
+		margin: 0 $--metric-box-spacingLg;
+		text-decoration: none;
+	}
+</style>
