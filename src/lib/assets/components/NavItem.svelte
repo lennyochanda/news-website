@@ -1,15 +1,10 @@
 <script>
-	import { currentPage } from '$lib/assets/js/store';
-
 	export let href;
-
-	$: isCurrentPage = $currentPage.startsWith(href);
 </script>
 
 <li>
 	<a
-		aria-current={isCurrentPage ? 'page' : false}
-		class:active={isCurrentPage}
+		class:active={href === new URL(window.location).pathname}
 		{href}
 		sveltekit:prefetch
 	>
@@ -21,5 +16,13 @@
 	a {
 		margin: 0 $--metric-box-spacingLg;
 		text-decoration: none;
+		color: inherit;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	.active {
+		color: $--color-core-primary;
+		text-decoration: underline;
 	}
 </style>
