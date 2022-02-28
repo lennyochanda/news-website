@@ -1,11 +1,11 @@
 <div class="aside">
 	<div class="visual">
-		<span>Live</span>
+		<h5>Live</h5>
 		<div>
-			<div class="circle" style="animation-delay: 0s;"></div>
-			<div class="circle" style="animation-delay: .6s;"></div>
-			<div class="circle" style="animation-delay: 1.2s;"></div>
-			<div class="circle" style="animation-delay: 1.8s;"></div>
+			<div class="circle" style="animation-delay: 0s;" />
+			<div class="circle" style="animation-delay: .6s;" />
+			<div class="circle" style="animation-delay: 1.2s;" />
+			<div class="circle" style="animation-delay: 1.8s;" />
 		</div>
 	</div>
 	<div class="title">
@@ -40,12 +40,12 @@
 		height: 15px;
 		position: absolute;
 		opacity: 0;
-		animation: scaleIn 1.8s infinite cubic-bezier(.36, .11, .89, .32);
+		animation: scaleIn 1.8s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
 	}
 	@keyframes scaleIn {
 		from {
-			transform: scale(.5, .5);
-			opacity: .5;
+			transform: scale(0.5, 0.5);
+			opacity: 0.5;
 		}
 		to {
 			transform: scale(1.5, 1.5);

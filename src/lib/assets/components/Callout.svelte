@@ -11,10 +11,10 @@
 		justify-content: center;
 		align-items: center;
 		background-color: $--color-core-primary;
-		color: $--color-core-bg;
+		color: $--color-shade-white;
 	}
 	span {
-		background-color: $--color-core-bg;
+		background-color: $--color-shade-white;
 		color: $--color-core-primary;
 		padding: $--metric-box-spacingSm;
 		border-radius: $--metric-box-spacingSm;

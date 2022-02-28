@@ -1,8 +1,8 @@
 <!-- This page handles any error encountered by the site. -->
 <script context="module">
 	export const load = ({ error, status }) => {
-		return { props: { error, status } };
-	};
+		return { props: { error, status } }
+	}
 </script>
 
 <script>

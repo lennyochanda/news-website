@@ -3,37 +3,35 @@
 </script>
 
 <article class="card">
-	<div class="visual">
-	</div>
+	<div class="visual" />
 	<div class="content">
-		<div class="content-header">
-			<div class="content-header__title">
-				<h3>Title Here</h3>
-			</div>
-		</div>
+		<h3>Title Here</h3>
 		<div class="content-body">
-			<div class="content-body__excerpt">
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, rerum.
-				</p>
-			</div>
+			<p>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
+				rerum.
+			</p>
 		</div>
 		<div class="content-footer">
-				<span class="content-footer__publishTime">2 hours ago </span>
-				<span class="content-footer__author">By Lenny Ochanda </span>
-				<span class="content-footer__readTime"> | 4 min read</span>
+			<span>2 hours ago </span>
+			<span>By Lenny Ochanda </span>
+			<span> | 4 min read</span>
 		</div>
 	</div>
-	<IconBar cards=true/>
+	<IconBar cards="true" />
 </article>
 
 <style lang="scss">
+	h3 {
+		color: $--color-core-primary;
+		margin: 0;
+	}
 	.card {
 		display: flex;
 		flex-direction: column;
 		border-radius: $--metric-radius;
 		box-shadow: $--generic-shadow;
-		background-color: $--color-shade-bright;
+		background-color: $--color-shade-white;
 		max-inline-size: 66ch;
 	}
 	.visual {
@@ -49,5 +47,8 @@
 	.content-footer {
 		width: 100%;
 		margin: $--metric-box-spacingSm 0;
+	}
+	span {
+		font-size: 0.8rem;
 	}
 </style>
