@@ -10,9 +10,9 @@
 </script>
 
 <script>
-	import '$lib/assets/scss/global.scss';
-	import Header from '$lib/assets/components/Header.svelte';
-	import Footer from '$lib/assets/components/Footer.svelte';
+	import '$lib/assets/scss/global.scss'
+	import Header from '$lib/assets/components/Header.svelte'
+	import Footer from '$lib/assets/components/Footer.svelte'
 </script>
 
 <!-- This markup is used on every page in the site. The <slot> is where the page's actual contents will show up. The dynamic path adds classes based on the current route. -->

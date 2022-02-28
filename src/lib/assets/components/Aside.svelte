@@ -1,20 +1,25 @@
 <div class="aside">
 	<div class="visual">
-		<span>Live</span>
+		<h5>Live</h5>
 		<div>
-			<div class="circle" style="animation-delay: 0s;"></div>
-			<div class="circle" style="animation-delay: .6s;"></div>
-			<div class="circle" style="animation-delay: 1.2s;"></div>
-			<div class="circle" style="animation-delay: 1.8s;"></div>
+			<div class="circle" style="animation-delay: 0s;" />
+			<div class="circle" style="animation-delay: .6s;" />
+			<div class="circle" style="animation-delay: 1.2s;" />
+			<div class="circle" style="animation-delay: 1.8s;" />
 		</div>
 	</div>
 	<div class="title">
-		<h2>Video Title Here</h2>
+		<h3>Video Title Here</h3>
 	</div>
 </div>
 
 <style lang="scss">
-	h2 {
+	@media (max-width: 50em) {
+		.aside {
+			margin: $--metric-box-spacingLg 0;
+		}
+	}
+	h3 {
 		margin: $--metric-box-spacingSm 0;
 	}
 	span {
@@ -40,8 +45,8 @@
 	}
 	@keyframes scaleIn {
 		from {
-			transform: scale(.5, .5);
-			opacity: .5;
+			transform: scale(0.5, 0.5);
+			opacity: 0.5;
 		}
 		to {
 			transform: scale(1.5, 1.5);

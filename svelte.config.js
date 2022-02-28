@@ -1,5 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
-import preprocess from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-auto'
+import preprocess from 'svelte-preprocess'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -7,13 +7,13 @@ const config = {
 		preprocess({
 			scss: {
 				// Ensures Sass variables are always available inside component <style> blocks
-				prependData: `@import 'src/lib/assets/scss/_vars.scss';`
-			}
+				prependData: `@import 'src/lib/assets/scss/_vars.scss';`,
+			},
 		}),
 	],
 	kit: {
-		adapter: adapter()
-	}
-};
+		adapter: adapter(),
+	},
+}
 
-export default config;
+export default config
