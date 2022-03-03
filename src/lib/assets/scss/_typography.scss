@@ -6,12 +6,13 @@ html {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	line-height: 1.6;
+	color: $--color-text-dark;
 
-	@media (min-width: $smMin) {
+	@media (min-width: $sm) {
 		font-size: 1.125rem;
 	}
 
-	@media (min-width: $lgMin) {
+	@media (min-width: $lg) {
 		font-size: 1.25rem;
 	}
 }
@@ -54,9 +55,10 @@ h6 {
 
 p {
 	font-weight: 400;
+	color: $--color-shade-dark;
 }
 
 span {
-	font-weight: 500;
-	color: $--color-shade-mid;
+	font-weight: 300;
+	color: $--color-shade-dark;
 }
