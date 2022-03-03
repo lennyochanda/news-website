@@ -1,20 +1,13 @@
 // Breakpoints
-$xsMin: 600px;
-$xsMax: 767px;
-$smMin: 768px;
-$smMax: 1023px;
-$mdMin: 1024px;
-$mdMax: 1279px;
-$lgMin: 1280px;
-$lgMax: 1439px;
-$xlMin: 1440px;
-$xlMax: 1679px;
-$xxlMin: 1680px;
-$xxlMax: 1959px;
-$xxxlMin: 1960px;
+$sm: 320px;
+$md: 672px;
+$lg: 1056px;
+$xlg: 1312px;
+$max: 1584px;
 
 // metrics
 
+$--metric-box-spacingXSm: 0.2rem;
 $--metric-box-spacingSm: 0.4rem;
 $--metric-box-spacing: 0.8rem;
 $--metric-box-spacingLg: 1.2rem;
@@ -24,26 +17,28 @@ $--metric-Sm-bpoint: 799px;
 
 // Colors
 
-$--color-core-primary: #e71d36;
-$--color-core-secondary: #2ec4b6;
+$--color-core-primary: #E71D36;
+$--color-core-secondary: #2EC4B6;
 $--color-core-tertiary: FF9F1C;
-$--color-core-bg: #ebebeb;
+$--color-core-bg: #F3F3F300;
 
 $--color-shade-dark: #011627;
-$--color-shade-mid: #a5a7af;
-$--color-shade-bright: #f5f5f5;
-$--color-shade-white: #fff;
+$--color-shade-mid: #A5A7Af;
+$--color-shade-bright: #E5E5E5;
+$--color-shade-white: #FFF;
 
 $--color-state-success: #OD652D;
-$--color-state-success-bright: #e9f6ed;
-$--color-state-info: #3074e2;
-$--color-state-info-bright: #deeafd;
-$--color-state-warn: #e71d36;
-$--color-state-warn-bright: #fff5e3;
+$--color-state-success-bright: #E9F6Ed;
+$--color-state-info: #3074E2;
+$--color-state-info-bright: #DEEAFD;
+$--color-state-warn: #E71D36;
+$--color-state-warn-bright: #FFF5E3;
 
 $--color-stroke: #585b6342;
-$--color-shadow: #d2d3da;
+$--color-shadow: #D2D3DA;
 
-$--color-off-white: #eee;
+$--color-off-white: #EEE;
+
+$--color-text-dark: #24273A;
 
 $--generic-shadow: 2px 8px 8px -2px $--color-shadow;

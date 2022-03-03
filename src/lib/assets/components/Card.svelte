@@ -1,9 +1,11 @@
 <script>
 	import IconBar from './IconBar.svelte'
+
+	let src = 'https://unsplash.com/photos/sf_1ZDA1YFw'
 </script>
 
 <article class="card">
-	<div class="visual" />
+	<div class="visual" style="background-image: url({src});" />
 	<div class="content">
 		<h3>Title Here</h3>
 		<div class="content-body">
@@ -25,6 +27,10 @@
 	h3 {
 		color: $--color-core-primary;
 		margin: 0;
+		font-size: 1.3em;
+	}
+	p {
+		font-size: .95em;
 	}
 	.card {
 		display: flex;
@@ -49,6 +55,6 @@
 		margin: $--metric-box-spacingSm 0;
 	}
 	span {
-		font-size: 0.8rem;
+		font-size: clamp(.8em, 1vw + .2em, .95em);
 	}
 </style>

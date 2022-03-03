@@ -57,7 +57,7 @@
 	.icons {
 		width: 100%;
 		justify-content: center;
-		padding: $--metric-box-spacing 0;
+		padding: $--metric-box-spacingSm 0;
 	}
 	.icons_border-top {
 		border-top: 1px solid $--color-shade-mid;

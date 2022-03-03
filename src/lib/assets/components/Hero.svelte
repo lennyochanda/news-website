@@ -4,7 +4,7 @@
 
 <div class="hero">
 	<div class="header flex-icons">
-		<h4 class="text-color-core-primary">Trending</h4>
+		<span class="subhead">Trending</span>
 		<div class="header-icons">
 			<IconBar cards={false} />
 		</div>
@@ -17,9 +17,7 @@
 		<div class="excerpt">
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam in cumque
-				natus ad, similique fuga, maiores ex libero perspiciatis necessitatibus,
-				qui praesentium doloremque optio quod soluta, explicabo totam eos
-				possimus quibusdam.
+				natus ad, similique fuga.
 			</p>
 		</div>
 		<div class="content-footer">
@@ -31,19 +29,28 @@
 </div>
 
 <style lang="scss">
-	h4,
+	p {
+		color: $--color-text-dark;
+	}
+	h5,
 	h2 {
-		margin: $--metric-box-spacingSm 0 0 0;
+		margin: 0;
+		color: $--color-core-primary;
+	}
+	.subhead {
+		color: $--color-core-primary;
+		font-weight: 700;
+		font-size: .8em;
 	}
 	.visual {
-		border-radius: $--metric-box-spacingSm;
+		border-radius: 0;
 		height: 20rem;
 	}
 	.content {
 		margin-bottom: $--metric-box-spacingLg;
 	}
 	span {
-		font-size: clamp(0.7rem, 1vw + 0.6rem, 1rem);
+		font-size: clamp(.7rem, 1.25vw + .6rem, .9rem);
 	}
 	@media (min-width: $--metric-Sm-bpoint) {
 		.hero {
