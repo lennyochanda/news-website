@@ -1,23 +1,26 @@
 <div class="callout">
-	<span>Breaking News</span><h5>Title Here</h5>
+	<span>Breaking</span>
+	<h5>Who will be allowed on the Nairobi Expressway.</h5>
 </div>
 
 <style lang="scss">
+	h5 {
+		font-size: min(max(.9rem, 3vw), 22px);
+	}
 	.callout {
-		padding: $--metric-box-spacingSm 0;
+		padding: $--metric-box-spacingSm $--metric-box-spacingXSm;
 		grid-column: 1 / -1;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		background-color: $--color-core-primary;
 		color: $--color-shade-white;
+		margin: 1em 0;
 	}
 	span {
-		font-size: .8em;
 		background-color: $--color-shade-white;
 		color: $--color-core-primary;
-		padding: $--metric-box-spacingXSm $--metric-box-spacingSm;
-		margin-inline-end: $--metric-box-spacingSm;
-		border-radius: $--metric-box-spacingSm;
+		padding: $--metric-box-spacingSm;
+		margin: $--metric-box-spacingSm;
 	}
 </style>

@@ -1,11 +1,10 @@
 <script>
-	import IconBar from './IconBar.svelte'
+	// import IconBar from './IconBar.svelte'
 
-	let src = 'https://unsplash.com/photos/sf_1ZDA1YFw'
 </script>
 
 <article class="card">
-	<div class="visual" style="background-image: url({src});" />
+	<div class="visual" />
 	<div class="content">
 		<h3>Title Here</h3>
 		<div class="content-body">
@@ -20,7 +19,6 @@
 			<span> | 4 min read</span>
 		</div>
 	</div>
-	<IconBar cards="true" />
 </article>
 
 <style lang="scss">
