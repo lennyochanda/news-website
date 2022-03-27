@@ -1,18 +1,47 @@
 <script>
 	import NavItem from './NavItem.svelte';
 	export let small
+
+	let links = [
+		{
+			href: '/',
+			title: 'Home'
+		},
+		{
+			href: '/politics',
+			title: 'Politics'
+		},
+		{
+			href: '/entertainment',
+			title: 'Entertainment'
+		},
+		{
+			href: '/sports',
+			title: 'Sports'
+		},
+		{
+			href: '/business',
+			title: 'Business'
+		},
+		{
+			href: '/technology',
+			title: 'Technology'
+		},
+		{
+			href: '/world',
+			title: 'World'
+		},
+		
+	]
 </script>
 
 <!-- Contents of this file will be used in the header and the responsive hamburger menu. -->
 
 <nav class="main-nav">
 	<ul class:column={small}>
-		<NavItem href="/">Home</NavItem>
-		<NavItem href="/entertainment">Entertainment</NavItem>
-		<NavItem href="/politics">Politics</NavItem>
-		<NavItem href="/sports">Sports</NavItem>
-		<NavItem href="/business">Business</NavItem>
-		<NavItem href="/technology">Technology</NavItem>
+		{#each links as link}
+			<NavItem href={ link.href }>home</NavItem>
+		{/each}
 	</ul>
 </nav>
 

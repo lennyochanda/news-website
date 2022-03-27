@@ -1,9 +1,5 @@
 <script>
 	import {
-		Header,
-		HeaderNav,
-		HeaderNavItem,
-		SkipToContent,
 		SideNav,
 		SideNavItems,
 		SideNavLink
@@ -14,6 +10,38 @@
 	function toggleSidebar () {
 		isSideNavOpen = !isSideNavOpen
 	}
+
+	let links = [
+		{
+			href: '/',
+			title: 'Home'
+		},
+		{
+			href: '/politics',
+			title: 'Politics'
+		},
+		{
+			href: '/entertainment',
+			title: 'Entertainment'
+		},
+		{
+			href: '/sports',
+			title: 'Sports'
+		},
+		{
+			href: '/business',
+			title: 'Business'
+		},
+		{
+			href: '/technology',
+			title: 'Technology'
+		},
+		{
+			href: '/world',
+			title: 'World'
+		},
+		
+	]
 </script>
 
 <header>
@@ -45,19 +73,20 @@
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			aria-hidden="true"
-			align="center"
 			viewBox="0 0 24 24"
 		>
 			<path fill="#000" d="M15.5 14 h -0.79 l -0.28 -0.27 A 6.471 6.471 0 0 0 16 9.5 A 6.5 6.5 0 1 0 9.5 16 c 1.61 0 3.09 -0.59 4.23 -1.57 l 0.27 0.28 v 0.79 l 5 4.99 L 20.49 19 l -4.99 -5 Z m -6 0 C 7.01 14 5 11.99 5 9.5 S 7.01 5 9.5 5 S 14 7.01 14 9.5 S 11.99 14 9.5 14 Z" />		
 		</svg>
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-			viewBox="0 0 24 24"
-			style="margin-inline-start: .8rem;"
-		>
-			<path fill="#000" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20, 15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
-		</svg>
+		<!--
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				aria-hidden="true"
+				viewBox="0 0 24 24"
+				style="margin-inline-start: .8rem;"
+			>
+				<path fill="#000" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20, 15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+			</svg>
+		-->
 	</div>
 	</div>
 	
@@ -66,11 +95,9 @@
 <SideNav
 	bind:isOpen={isSideNavOpen} fixed={false}>
 	<SideNavItems>
-		<SideNavLink href='/' text='home' />
-		<SideNavLink href='/sports' text='Sports' />
-		<SideNavLink href='/entertainment' text='Entertainment' />
-		<SideNavLink href='/business' text='Business' />
-		<SideNavLink href='/world' text='World' />
+		{#each links as { href, title }}
+			<SideNavLink href={ href } text={ title } />
+		{/each}
 	</SideNavItems>
 </SideNav>
 
@@ -80,7 +107,7 @@
 		padding: $--metric-box-spacing;
 		justify-content: center;
 		align-items: center;
-		min-height: 3rem;
+		min-height: 4rem;
 		line-height: 1;
 		font-family: Segoe UI, system-ui, -apple-system, sans-serif;
 		font-weight: 700;

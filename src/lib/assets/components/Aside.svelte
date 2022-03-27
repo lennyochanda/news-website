@@ -8,7 +8,7 @@
 			<div class="circle" style="animation-delay: 1.8s;" />
 		</div>
 	</div>
-	<div class="title">
+	<div>
 		<h3>Video Title Here</h3>
 	</div>
 </div>
@@ -19,15 +19,11 @@
 			margin: $--metric-box-spacingLg 0;
 		}
 	}
-	h3 {
+	h5 {
 		margin: $--metric-box-spacingSm 0;
-	}
-	span {
-		margin-right: $--metric-box-spacingSm;
 	}
 	.visual {
 		display: inline-flex;
-		border-radius: $--metric-radius;
 		box-shadow: $--generic-shadow;
 		min-height: 18rem;
 		background: $--color-shade-mid;
